@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* ヘッダー */
+header {
+  height: 50px;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+}
+header .logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 50px;
+}
+/* メインビジュアル */
+.main_visual {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+.main_visual .container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.main_visual .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+}
+/* Aboutセクション */
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 80px;
+}
+.about {
+  text-align: center;
+}
+.about .sub_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  color: rgb(84, 137, 177);
+  border-bottom: black 2px solid;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.about .name {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+  color: black;
+  align-self: flex-start;
+  text-align: left;
+}
+.about .container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+.about .container .text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.about .container .self_img img {
+  width: 200px;
+  border-radius: 100px;
+}
+
+/* skillsセクション */
+.skills {
+  text-align: center;
+}
+.skills .sub_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  color: rgb(84, 137, 177);
+  border-bottom: black 2px solid;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.attention {
+  margin-bottom: 20px;
+}
+.skill_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.skill img.img_js {
+  width: 80px;
+  height: 80px;
+  margin: 20px 0 10px;
+}
+.skill p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+.skill_text {
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 400px;
+  transform: translate(35%, 0%);
+}
+.skill_text strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+.skill_text p {
+  text-align: left;
+}
+/* コンタクトセクション */
+.contact .container {
+  margin-bottom: 50px;
+}
+/* フッター */
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sns a {
+  font-size: 20px;
+  color: rgb(194, 114, 9);
+}
