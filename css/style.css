@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 /* ヘッダー */
 header {
@@ -22,6 +23,20 @@ header .row {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 100px;
+    width: 100vw;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header .row {
+    width: 100vw;
+    margin: 0;
+  }
 }
 header .logo {
   font-size: 30px;
@@ -38,17 +53,28 @@ header nav ul li {
   position: relative;
   height: 50vh;
   overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+.main_visual .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .main_visual .container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
-  position: absolute;
+  position: relative;
   z-index: -1;
   top: 0;
   left: 0;
 }
+
 .main_visual .title {
   position: absolute;
   top: 50%;
@@ -57,6 +83,11 @@ header nav ul li {
   color: #ffffff;
   font-size: 70px;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .main_visual .title {
+    font-size: 40px;
+  }
 }
 /* Aboutセクション */
 .about .container {
