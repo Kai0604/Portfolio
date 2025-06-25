@@ -5,6 +5,10 @@
   margin: 50px;
   gap: 80px;
 }
+
+.main_visual .title {
+  opacity: 0;
+}
 .about .container .text {
   display: flex;
   flex-direction: column;
